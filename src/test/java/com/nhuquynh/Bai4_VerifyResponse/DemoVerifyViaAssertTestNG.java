@@ -15,7 +15,7 @@ public class DemoVerifyViaAssertTestNG {
         request.baseUri("https://book.anhtester.com/api")
                 .accept("application/json");
 
-        int id = 1; //ID của book. Gắn vào sau path url luôn
+        String id = "cmji2u222002l7uk1tm5inbnh"; //ID của book. Gắn vào sau path url luôn
 
         Response response = request.when().get("/book/" + id);
         response.prettyPrint();
